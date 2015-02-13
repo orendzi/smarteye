@@ -1,0 +1,97 @@
+@import compass
+@import "settings"
+@import "../bower_components/foundation/scss/foundation" 
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility"
+
+
+// Quick breakpoints - todo: move to settings!
+$media: max-width 1024px
+
+
+// Inbox
+svg
+    background: $smoke
+    border: $iron
+    
+
+    
+.toolbar 
+    button
+        // +breakpoint($media)
+        //     margin: 0 10px 0 0
+        +box-sizing(border-box)
+        width: 80px
+        height: 80px
+        padding: 25px
+    
+@media (min-width: 0) and (max-width: 1024px) 
+    .toolbar button
+        margin: 0 10px 0 0
+    
+#drawCircle div
+    +border-radius(30px)
+    background: $white
+    width: 30px
+    height: 30px
+    
+#drawRect div
+    background: $white
+    width: 30px
+    height: 30px
+        
+#drawPoly div
+    width: 0
+    height: 0
+    border-style: solid
+    border-width: 0 15px 25px 15px
+    border-color: transparent transparent $white transparent
+    
+#drawLine div
+    +rotate(45deg) 
+    background: $white
+    width: 35px
+    height: 2px
+    
+#drawText
+    font-size: 2.1rem !important
+    
+
+
+        

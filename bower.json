@@ -1,0 +1,20 @@
+{
+  "name": "SmartEye",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "Snap.svg": "~0.3.0",
+    "Jade": "~1.4.28"
+  },
+  "authors": [
+    "orendzi <orendzi.rayon@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
